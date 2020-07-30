@@ -1,7 +1,7 @@
-type Position = {
+export interface IPosition {
   lat: number;
-  lon: number;
-};
+  lng: number;
+}
 
 export interface ICar {
   id?: number;
@@ -12,7 +12,7 @@ export interface ICar {
   year?: string;
   fuelType?: string;
   type?: string;
-  Position?: Position;
+  Position?: IPosition;
   odometer?: number;
   fuel?: number;
   battery?: number;
